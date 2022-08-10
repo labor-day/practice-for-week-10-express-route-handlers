@@ -131,7 +131,6 @@ exports.getFilteredAlbums = (startsWith) => {
   if (!startsWith) return ({
     error: "Filtered albums requires a starting letter"
   });
-
   return Object.values(albums)
     .filter(album => album.name.startsWith(startsWith));
 };
